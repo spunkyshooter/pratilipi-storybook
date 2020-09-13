@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import config from "./config";
 import bodyParser from "body-parser";
 import cors from "cors";
+import path from "path";
 
 //Impoting routes
 import AuthRoute from "./Routes/auth";
@@ -37,6 +38,12 @@ app.get("/api", (req, res) => {
   res.write("Welcome to Pratilipi story book");
   res.end();
 });
+
+if (process.env.NODE_ENV === "production") {
+  app.use("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 const PORT = process.env.PORT || 4000; //in local dev, we use port 4000
 app.listen(PORT, () => {

@@ -2,13 +2,16 @@
   "name": "pratilipi",
   "version": "1.0.0",
   "main": "start.js",
+  "description": "Pratilipi storybook assignment",
   "scripts": {
     "start": "node start.js",
     "server": "nodemon start.js",
     "client": "cd client && yarn start",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install  --prefix client && yarn run build --prefix client"
   },
   "license": "MIT",
+  "author": "Manoj Kumar R @spunkyshooter",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
