@@ -1,0 +1,12 @@
+@import "./variables";
+
+div.auth_input_wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.form_wrapper {
+  width: 80%;
+  @media #{$lg} {
+    width: 50%;
+  }
+}

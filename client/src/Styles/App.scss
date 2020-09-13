@@ -1,0 +1,49 @@
+@import "./variables";
+
+.navbar-logo {
+  max-height: 2.5rem;
+  @media #{$lg} {
+    max-height: 3rem;
+  }
+}
+
+.landing-text {
+  font-size: 1.5rem;
+  position: relative;
+  top: 13%;
+
+  @media #{$lg} {
+    font-size: 2.8rem;
+  }
+}
+.landing-img-1 {
+  bottom: 7rem;
+  left: -1rem;
+  position: absolute;
+}
+.absCenterX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-bg-variant {
+  background-color: $secondary-clr;
+  color: #fff;
+  font: 0.75rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 0.6rem 2rem;
+  outline: none;
+  line-height: 1.3;
+  @media #{$lg} {
+    font-size: 0.875rem;
+  }
+}

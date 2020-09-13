@@ -1,0 +1,6 @@
+{
+  "dashboard": "/dashboard",
+  "auth": "/auth",
+  "blogs": "/blogs",
+  "blog": "/blog"
+}

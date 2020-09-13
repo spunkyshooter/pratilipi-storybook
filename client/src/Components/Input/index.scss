@@ -1,0 +1,24 @@
+.label-grey {
+  color: #999999;
+}
+input {
+  border: 1px solid #999999;
+  // border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s;
+}
+input:not(:placeholder-shown):invalid {
+  border-bottom-color: #ff5b4e;
+}
+
+input:valid {
+  border-bottom-color: #00bd00;
+}
+input[data-invalid="true"] {
+  border-bottom-color: #ff5b4e;
+}
+input[data-invalid="false"] {
+  border-bottom-color: #00bd00;
+}
+input::placeholder {
+  font-size: 0.9rem;
+}
