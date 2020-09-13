@@ -8,7 +8,7 @@
     "server": "nodemon start.js",
     "client": "cd client && yarn start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false npm install  --prefix client && npm run build --prefix client"
   },
   "license": "MIT",
   "author": "Manoj Kumar R @spunkyshooter",
@@ -22,5 +22,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.4",
     "slugify": "^1.4.5"
+  },
+  "engines": {
+    "node": "10.x",
+    "yarn": "1.x"
   }
 }
