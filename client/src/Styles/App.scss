@@ -1,5 +1,12 @@
 @import "./variables";
 
+/*SInce on production tailwind in not working in heroku, hence using cdn, but can't customize it*/
+.text-primary {
+  color:$primary-clr;
+}
+.text-secondary {
+  color:$secondary-clr;
+}
 .navbar-logo {
   max-height: 2.5rem;
   @media #{$lg} {
