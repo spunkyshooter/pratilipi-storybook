@@ -83,5 +83,8 @@ $black: rgb(32, 32, 32);
   @media #{$lg} {
     left: 4rem;
     top: 4rem;
+    & img {
+      height: 24px;
+    }
   }
 }
