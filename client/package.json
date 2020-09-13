@@ -12,7 +12,10 @@
     "react-toastify": "^6.0.8",
     "typewriter-effect": "^2.13.1",
     "validator": "^13.1.1",
-    "yup": "^0.29.3"
+    "yup": "^0.29.3",
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.8"
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
@@ -37,9 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss-cli": "^7.1.2",
-    "tailwindcss": "^1.8.8"
-  }
+  "devDependencies": {}
 }
