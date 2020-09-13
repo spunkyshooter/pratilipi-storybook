@@ -2,10 +2,10 @@
 
 /*SInce on production tailwind in not working in heroku, hence using cdn, but can't customize it*/
 .text-primary {
-  color:$primary-clr;
+  color: $primary-clr;
 }
 .text-secondary {
-  color:$secondary-clr;
+  color: $secondary-clr;
 }
 .navbar-logo {
   max-height: 2.5rem;
@@ -42,7 +42,7 @@
 }
 
 .btn-bg-variant {
-  background-color: $secondary-clr;
+  background-color: $primary-clr;
   color: #fff;
   font: 0.75rem;
   cursor: pointer;

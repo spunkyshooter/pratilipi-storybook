@@ -4,6 +4,7 @@ import config from "./config";
 import bodyParser from "body-parser";
 import cors from "cors";
 import path from "path";
+import favicon from "serve-favicon";
 
 //Impoting routes
 import AuthRoute from "./Routes/auth";
@@ -30,6 +31,7 @@ app.use(cors());
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
 //Routes / Apis
 app.use("/api/auth", AuthRoute);
 app.use("/api/story", StoryRoute);
