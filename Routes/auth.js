@@ -7,4 +7,5 @@ router.post("/register", AuthController.register);
 router.post("/login", AuthController.login);
 router.post("/checkUsername", AuthController.checkUsername);
 
+
 export default router;

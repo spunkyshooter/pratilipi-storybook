@@ -9,7 +9,7 @@ const createToken = async (payload, SECRET) =>
       SECRET,
       {
         // algorithm: "RS256", //Is producing error
-        expiresIn: "300s",
+        expiresIn: "24h", //300s
       },
       (err, token) => {
         if (err) {

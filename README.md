@@ -8,17 +8,6 @@
 
 This Web application showcases the Authentication and Story/Blogs
 
-Authentication Mechanism: JWT
-Models Avaliable
-
-1. User
-2. Story
-
-Api Available
-User
-
-1.
-
 ## Core Features:
 
 ### Currently Viewing
@@ -73,18 +62,18 @@ How total readcounts are calculated ?
 
 ## Application Overview
 
-At beginning we are welcome with landing page.
+At beginning users are welcomed with landing page.
 
-- Has Typewriter effect and little bit of changes in the content.
+- It Has Typewriter effect and little bit of changes in the content.
 - Navbar shows Register/Login
 
 On Clicking Register/Login , it redirects to `auth page`
 
-- User either can register or login .
+- Users either can register or login .
 - In case of Register, Username availability is checked automatically when user enters username.
-- It also handles any errors such as empty fields, internal server err fluildly and toasts the message.
+- It also handles any errors such as empty fields, internal server error fluildly and toasts the message.
 - On succesfull redirection, user would be redirected to `/blogs` page.
 - All Stories would be visible as a gallery of cards.
 - Clicking on rocketsvg on the card will take to the `/blog/:slug` (Individual Blog) page.
 
-- It showcases the blog aswell as readcount and currently viewing count beside svgs finger count and boy reading book respectively.
+- It showcases the blog as well as readcount and currently viewing count beside svgs "finger count" and "boy reading book" respectively.

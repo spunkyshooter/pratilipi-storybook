@@ -10,4 +10,5 @@ router.get("/", isAuth, StoryController.getAllStories);
 router.get("/:slug", isAuth, StoryController.getStoryBySlug);
 router.get("/author/:authorId", StoryController.getStoriesOfAuthor);
 
+
 export default router;
