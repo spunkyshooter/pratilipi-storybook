@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:4000/api/";
+const baseUrl = "https://pratilipi-storybook.herokuapp.com/api/";
 
 export default {
   checkUsername: baseUrl + "auth/checkusername",
