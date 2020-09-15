@@ -15,14 +15,14 @@ This Web application showcases the Authentication and Story/Blogs
 How currentlyViewing is calculated ?
 
 When the user requests the resource for a story,
-we deletes the certain items in the currentlyviewing array (stored in db) which are below certain timestamps (say 5 min)
+we delete the certain items in the currentlyviewing array (stored in db) which are below certain timestamps (say 5 min)
 then we add the new date and userinfo.
 
 ```
 { date:Date.now(), userId: ...}
 ```
 
-We store userId to handle the edge cases like the same person opening he webpage on another tab or on another device.
+We store userId to handle the edge cases like the same person opening the webpage on another tab or on another device.
 
 Cons:
 This is not realtime.
