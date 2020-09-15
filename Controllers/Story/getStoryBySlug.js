@@ -39,6 +39,7 @@ const getStoryBySlug = async (req, res) => {
     }
 
     await Story.findByIdAndUpdate(story._id, updateQuery).exec(); //updateQuery
+
     return;
   } catch (err) {
     console.log("**story req err**\n", err);
@@ -66,8 +67,7 @@ const isVisitorPresent = (visitorsArr = [], userId) => {
  */
 const getUpdatedCurrentlyViewing = (currentlyViewing = [], userId) => {
   const newDate = new Date();
-  const past5min =
-    newDate.getTime() - newDate.setMinutes(newDate.getMinutes() - 5);
+  const past5min = newDate.setMinutes(newDate.getMinutes() - 5);
   const UpdatedCurrView = currentlyViewing.filter((item, _) => {
     if (`${item.userId}` !== userId && new Date(item.date).getTime() > past5min)
       return true;

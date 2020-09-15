@@ -73,14 +73,14 @@ const Blog = ({ match }) => {
               className={`lg:absolute flex lg:block my-8 md:my-auto ${styles.side_banner}`}
             >
               <div className="flex lg:m-8 items-center">
-                <img src={readCountImg} alt="currently reading" />{" "}
+                <img src={readCountImg} alt="read count" />{" "}
+                <span className="inline-block ml-2">{data.readCount}</span>
+              </div>
+              <div className="flex lg:m-8 mx-4 md:mx-0 items-center">
+                <img src={currentlyReadingImg} alt="currently reading" />{" "}
                 <span className="inline-block ml-2">
                   {data.currentlyViewing}
                 </span>
-              </div>
-              <div className="flex lg:m-8 mx-4 md:mx-0 items-center">
-                <img src={currentlyReadingImg} alt="read count" />{" "}
-                <span className="inline-block ml-2">{data.readCount}</span>
               </div>
             </div>
           )}
